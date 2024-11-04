@@ -9,9 +9,10 @@ public class Lab006_TernaryOperator {
         System.out.println(vote);
 
         //Nested Ternary Operator
-        int a=10, b=200, c=25;
+        int a=100, b=20, c=250;
 
-        String result = a>b ? "A is greater" : (b>c ? "B is greater" : "C is greater");
+        String result = (a>b && a>c) ? "A is greater" : (b>c ? "B is greater" : "C is greater");
         System.out.println(result);
+
     }
 }
