@@ -20,5 +20,6 @@ public class Lab007_User_Input {
 
         System.out.printf("Your Name is %s \nYour Age is %d \nYour Salary is %f" , name , age, salary);
 
+    //    Scanner.close();
     }
 }

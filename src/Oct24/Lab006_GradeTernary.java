@@ -45,6 +45,6 @@ public class Lab006_GradeTernary {
 
         System.out.println("Your Grade is " + grade);
 
-        Scanner.close();
+   //     Scanner.close();
     }
 }
