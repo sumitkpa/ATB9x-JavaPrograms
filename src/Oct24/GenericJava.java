@@ -13,5 +13,6 @@ public class GenericJava {
 
         System.out.println(a);
         return null;
+
     }
 }
