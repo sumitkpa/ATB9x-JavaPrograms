@@ -2,17 +2,20 @@ package Oct24;
 
 public class GenericJava {
 
-
+// calling Generic Method
     public static void main(String[] args) {
 
-        gmethod(a:5);
+        gmethod(5);
+        gmethod('S');
+        gmethod("Sumit");
+        gmethod(51.50);
 
     }
 
-    public static <DT> DT gmethod (DT a) {
+// Create Generic Method
+    public static <DT> void gmethod (DT a) {
 
         System.out.println(a);
-        return null;
 
     }
 }
