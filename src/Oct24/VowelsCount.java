@@ -15,26 +15,33 @@ public class VowelsCount {
         //String to Array
         char[] name = (n1.toCharArray());
         System.out.println(name);
+        //Create ArrayList to store vowels
         List<Character> charList = new ArrayList<>();
-
+        //Check Vowels present
         for (int i = 0; i < name.length; i++) {
             String n2 = "aeiou";
-            char[] v = n2.toCharArray();
+            char[] v = n2.toCharArray();//i = 1 = a|e|i|o|u -- j=0 = a == e
 
             for (int j = 0; j < v.length; j++) {
                 if (v[j] == name[i]) {
                     // System.out.print(name[i]);
                     charList.add(name[i]);
-
                 }
-
             }
         }
         System.out.println(charList.size() + " " + charList);
 
-        // Print the character counts
+// Print the character counts
+// (This line declares and initializes a HashMap named count)
+//INFO: HashMap is a data structure that stores key-value pairs. In this case:
+//INFO:The keys are of type Character (representing the characters we're counting).
+//INFO: The values are of type Integer (representing the frequency or count of each character).
         HashMap<Character, Integer> count = new HashMap<>();
+
+
         for (char c : charList) {
+
+//This is the core logic for counting the character frequencies
             count.put(c, count.getOrDefault(c, 0) + 1);
         }
         for (char c : count.keySet()) {
