@@ -5,11 +5,13 @@ public class Lab002 {
 
         // Simple calculator using the SOP statements
 
-        System.out.println("10 + 2 = "+(10+2));
-        System.out.println("10 + 2 = "+(11-1));
-        System.out.println("10 + 2 = "+(10/2));
-        System.out.println("10 + 2 = "+(10*5));
-        System.out.println("10 + 2 = "+(20%100));
+
+        System.out.println("10 + 2 = " + (10 + 2));
+        System.out.println("10 + 2 = " + (11 - 1));
+        System.out.println("10 + 2 = " + (10 / 2));
+        System.out.println("10 + 2 = " + (10 * 5));
+        System.out.println("10 + 2 = " + (20 % 100));
 
     }
 }
+
